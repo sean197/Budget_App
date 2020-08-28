@@ -1,0 +1,48 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(63,94,251);
+    background: linear-gradient(90deg, rgba(63,94,251,1) 0%, rgba(186,45,45,0.7646076794657763) 100%);
+}
+header {
+    margin: 30px 0;
+    text-align: center;
+}
+
+.content {
+    padding:20px;
+}
+.main-content{
+    background-color: white;
+    padding: 30px;
+    border-radius: 20px;
+}
+.budget p{
+    margin-bottom: 0;
+    font-weight: bold;
+}
+.budget p span {
+    font-weight: normal;
+}
+
+
+
+#expenses {
+    margin-bottom: 30px;
+}
+h1{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 100;
+    color: white;
+}
+h2 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 100;
+    color: rgb(63,94,251);
+    font-size: 22px;
+    margin-bottom:30px;
+}
