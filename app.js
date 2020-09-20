@@ -20,8 +20,8 @@ class HTML {
     // Inserts the budget when user submits it
     insertBudget(amount) {
         // insert into HTML
-        budgetTotal.innerHTML = `£{amount}`;
-        budgetLeft.innerHTML = `£{amount}`;
+        budgetTotal.innerHTML = `{amount}`;
+        budgetLeft.innerHTML = `{amount}`;
     
     }
 
@@ -54,7 +54,7 @@ class HTML {
         // Create the template
         li.innerHTML = `
         £{name}
-        <span class="badge badge-primary badge-pill" >£${amount}</span>
+        <span class="badge badge-primary badge-pill" >£{amount}</span>
         `;
 
 
