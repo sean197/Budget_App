@@ -53,7 +53,7 @@ class HTML {
 
         // Create the template
         li.innerHTML = `
-        £{name}
+        ${name}
         <span class="badge badge-primary badge-pill" >${amount}</span>
         `;
 
