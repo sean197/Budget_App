@@ -20,8 +20,8 @@ class HTML {
     // Inserts the budget when user submits it
     insertBudget(amount) {
         // insert into HTML
-        budgetTotal.innerHTML = `${amount}`;
-        budgetLeft.innerHTML = `${amount}`;
+        budgetTotal.innerHTML = `£{amount}`;
+        budgetLeft.innerHTML = `£{amount}`;
     
     }
 
@@ -53,7 +53,7 @@ class HTML {
 
         // Create the template
         li.innerHTML = `
-        ${name}
+        £{name}
         <span class="badge badge-primary badge-pill" >£${amount}</span>
         `;
 
@@ -66,7 +66,7 @@ class HTML {
     // Substract expense amount from budget
     trackBudget(amount) {
         const budgetLeftPound = budget.substractFromBudget(amount);
-        budgetLeft.innerHTML = `${budgetLeftPound}`;
+        budgetLeft.innerHTML = `£{budgetLeftPound}`;
 
         // Check when 25% is spent
         if( (budget.budget / 4 ) > budgetLeftPound ){
